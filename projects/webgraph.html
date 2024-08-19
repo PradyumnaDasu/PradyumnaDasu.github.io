@@ -43,18 +43,25 @@
   
             <div class="col-lg-12 portfolio-info">
               <br>
-              <h2 style="color:#12d640">Image Generator</h2>
+              <h2 style="color:#12d640">Google Web graph analysis</h2>
               <ul>
-                <li><strong>Tech Stack</strong>: TJava, NodeJS, Python, HTML, CSS, Javascript, AWS(S3, EC2, SQS)</li>
-                <li><strong>Github URL</strong>: <a href="https://github.com/rajaprerak/image_recognition_as_a_service" target="_blank">Project Link</a></li>
+                <li><strong>Tech Stack</strong>: PyTorch, NetworkX, Gephi</li>
+                <!-- <li><strong>Github URL</strong>: <a href="https://github.com/rajaprerak/image_recognition_as_a_service" target="_blank">Project Link</a></li> -->
               </ul>
   
               <p>
-                Built an elastic web application that automatically scales in and scales out 20 EC2 instances based on the traffic of current users with the help of AWS services. Created custom AMIs to deploy image recognition app on EC2 instance; used SQS to handle request and response.              </p>
+                This project focuses on understanding the behavior and structure of the web using the Google Web Graph Data from the Google Programming Contest 2002. This analysis aimed to identify key structural characteristics of the web graph, including community detection and the presence of cliques.    
               </p>
               <p>
-                Deployed image recognition system on AWS for the clients to access and successfully tested the application by generating 1000 requests.              </p>
+                Data Handling: Utilized NetworkX and Gephi to analyze the graph structure, initially focusing on a subset with 5,086 nodes and 43,589 edges. This involved preprocessing the data and performing degree-based sampling to simplify the dataset while maintaining its key properties.    
               </p>
+              <p>
+                Graph Analysis: Conducted an in-depth analysis of the graph's structure, revealing that it is densely connected with 56 communities and several large cliques. PageRank algorithms were compared using NetworkX, with Mean Squared Error as the comparison metric, including the baseline NetworkX PageRank, Hot Kernel PageRank, and Classic PageRank algorithms.       
+              </p>
+              <p>
+                Link Prediction: Implemented and compared various link prediction algorithms, including Adamic-Adar, Jaccard Coefficient, and Preferential Attachment, using the NetworkX library to explore the potential for predicting new connections within the graph. Here, we also compared a Graph convolutional network's performance to traditional methods. 
+              </p>
+
             </div>
   
           </div>
